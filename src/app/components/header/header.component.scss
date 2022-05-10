@@ -1,0 +1,19 @@
+.carousel-item{
+    height:110vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size:cover;
+
+}
+
+.apparition{
+    animation: apparition 2s linear;
+}
+@keyframes apparition{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
