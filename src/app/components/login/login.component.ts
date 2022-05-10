@@ -138,7 +138,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  constructor(private snackBar: MatSnackBar,private api:UserService) { }
+  constructor(private snackBar: MatSnackBar,private apiUser:UserService) { }
 
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action, {
@@ -166,7 +166,7 @@ export class LoginComponent implements OnInit {
   //login
   getUserData() {
 
-    this.api.getAllUser().subscribe(
+    this.apiUser.getAllUser().subscribe(
       data => {
         this.allUser = data;
       },
@@ -189,7 +189,7 @@ export class LoginComponent implements OnInit {
       sexe: this.sexe.value,
       username: this.username_insc.value,
     }
-    this.api.createUser(myUser).subscribe(
+    this.apiUser.createUser(myUser).subscribe(
       data => {
         this.openSnackBar("Inscription réussie", "Fermer");
         var btn = document.getElementById("connecter");
