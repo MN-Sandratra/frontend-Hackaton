@@ -9,6 +9,7 @@ export class ProvinceComponent implements OnInit {
   @Input() name!:string;
   @Input() description!:string;
   @Input() img!:string;
+  @Input() _id!:number;
 
   constructor() { }
 

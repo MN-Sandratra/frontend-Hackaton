@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hotel-slide',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hotel-slide.component.scss']
 })
 export class HotelSlideComponent implements OnInit {
+  @Input() title!: string;
+
   items = [
     {
       "_id": 1,

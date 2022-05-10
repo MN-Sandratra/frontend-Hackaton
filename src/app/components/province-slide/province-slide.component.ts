@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ProvinceService } from 'src/app/services/province.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { ProvinceService } from 'src/app/services/province.service';
   styleUrls: ['./province-slide.component.scss']
 })
 export class ProvinceSlideComponent implements OnInit {
+  @Input() title!: string;
   items = [
     {
     "_id": 1,

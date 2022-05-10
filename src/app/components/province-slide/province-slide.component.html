@@ -1,9 +1,9 @@
     <div class="container" style="margin-top: 10rem;">
-    <p id="provinces" class="h1 text-center">Provinces de Madagascar</p>
+    <p id="provinces" class="h1 text-center">{{ title }}</p>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div *ngFor="let province of items" [class]="province._id == 1 ? 'carousel-item active' : 'carousel-item'">
-          <app-province [name]="province['libellé']" [description]="province['description']" [img]="province['img']">
+          <app-province [_id]="province['_id']" [name]="province['libellé']" [description]="province['description']" [img]="province['img']">
           </app-province>
         </div>
       </div>
