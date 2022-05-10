@@ -7,7 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProvinceComponent implements OnInit {
   @Input() name!:string;
-  
+  @Input() description!:string;
+  @Input() img!:string;
+
   constructor() { }
 
   ngOnInit(): void {
