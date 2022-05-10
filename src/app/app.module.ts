@@ -14,12 +14,16 @@ import { fas }from '@fortawesome/free-solid-svg-icons';
 import { far }from '@fortawesome/free-regular-svg-icons';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ProvinceComponent } from './components/province/province.component';
+import { ProvinceSlideComponent } from './components/province-slide/province-slide.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProvinceComponent,
+    ProvinceSlideComponent
   ],
   imports: [
     BrowserModule,
