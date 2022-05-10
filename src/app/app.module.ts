@@ -9,6 +9,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule, FaIconLibrary  } from '@fortawesome/angular-fontawesome';
+import { fas }from '@fortawesome/free-solid-svg-icons';
+import { far }from '@fortawesome/free-regular-svg-icons';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,14 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(library:FaIconLibrary){
+    library.addIconPacks(fas,far);
+  }
+}
