@@ -1,4 +1,5 @@
 <div class="container my-5">
+  <p id="hotels" class="h1 text-center">Hôtels</p>
   <div class="row gx-2 gy-5">
     <div *ngFor="let hotel of items" class="col-12 col-md-6 col-lg-4">
       <app-hotel [nom]="hotel['nom']" [adresse]="hotel['adresse']" [description]="hotel['description']"
