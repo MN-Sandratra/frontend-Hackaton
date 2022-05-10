@@ -14,12 +14,16 @@ import { fas }from '@fortawesome/free-solid-svg-icons';
 import { far }from '@fortawesome/free-regular-svg-icons';
 import { ProvinceComponent } from './components/province/province.component';
 import { ProvinceSlideComponent } from './components/province-slide/province-slide.component';
+import { HotelSlideComponent } from './components/hotel-slide/hotel-slide.component';
+import { HotelComponent } from './components/hotel/hotel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProvinceComponent,
-    ProvinceSlideComponent
+    ProvinceSlideComponent,
+    HotelSlideComponent,
+    HotelComponent
   ],
   imports: [
     BrowserModule,
