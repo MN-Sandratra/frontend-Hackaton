@@ -1,0 +1,21 @@
+.sign {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--main-color);
+    }
+}
+
+.box-login {
+    width: 420px !important;
+}
+
+.box-title {
+    color: var(--main-color);
+}
+
+.btn-login-color {
+    background: var(--main-color) !important;
+    color: #fff;
+}

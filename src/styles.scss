@@ -1,5 +1,106 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "./assets/scss/dashboard.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+    --main-color: #8c00ff;
+}
+
+// ===== SnackBar color =====
+.green-snackbar {
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+
+    .mat-simple-snackbar-action {
+        color: #155724 !important;
+    }
+}
+
+.orange-snackbar {
+    color: #644a10 !important;
+    background-color: #f8d6aa !important;
+    border-color: #f8d6aa !important;
+
+    .mat-simple-snackbar-action {
+        color: #644a10 !important;
+    }
+}
+
+.red-snackbar {
+    color: #571515 !important;
+    background-color: #edd4d4 !important;
+    border-color: #edd4d4 !important;
+
+    .mat-simple-snackbar-action {
+        color: #571515 !important;
+    }
+}
+
+// ==== Material Input ====
+
+.mat-focused .mat-form-field-label {
+    color: var(--main-color) !important;
+    font-weight: normal !important;
+}
+
+.mat-form-field-label,
+.text-gray {
+    color: #999999 !important;
+    font-weight: normal !important;
+}
+
+.mat-form-field-underline {
+    background-color: #ececec !important;
+}
+
+.mat-form-field-ripple {
+    background-color: var(--main-color) !important;
+}
+
+.cdk-overlay-container {
+    z-index: 1200 !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    opacity: 0 !important;
+    /*click effect color change*/
+    background-color: var(--main-color) !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background-color: var(--main-color) !important;
+    /*inner circle color change*/
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: var(--main-color) !important;
+    /*outer ring color change*/
+}
+
+.cdk-overlay-container {
+    z-index: 1200 !important;
+}
+
+.cdk-global-overlay-wrapper {
+    z-index: 1000 !important;
+}
+
+.mat-form-field-ripple {
+    background-color: var(--main-color) !important;
+}
+
+.mat-datepicker {
+    color: var(--main-color) !important;
+}
