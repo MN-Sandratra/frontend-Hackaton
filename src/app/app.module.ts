@@ -16,6 +16,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProvinceComponent } from './components/province/province.component';
 import { ProvinceSlideComponent } from './components/province-slide/province-slide.component';
+import { HotelSlideComponent } from './components/hotel-slide/hotel-slide.component';
+import { HotelComponent } from './components/hotel/hotel.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ProvinceSlideComponent } from './components/province-slide/province-sli
     NavbarComponent,
     HeaderComponent,
     ProvinceComponent,
-    ProvinceSlideComponent
+    ProvinceSlideComponent,
+    HotelSlideComponent,
+    HotelComponent
   ],
   imports: [
     BrowserModule,
