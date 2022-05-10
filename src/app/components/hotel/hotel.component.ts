@@ -20,7 +20,7 @@ export class HotelComponent implements OnInit {
 
   private shortenDescription() : void {
     var trimmedString = this.description.substr(0, 250);
-    this.shortedDescription = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))).concat(..." ...")
+    this.shortedDescription = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))).concat(..." (...)")
   }
 
   constructor() { }
