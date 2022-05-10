@@ -18,6 +18,7 @@ import { ProvinceComponent } from './components/province/province.component';
 import { ProvinceSlideComponent } from './components/province-slide/province-slide.component';
 import { HotelSlideComponent } from './components/hotel-slide/hotel-slide.component';
 import { HotelComponent } from './components/hotel/hotel.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HotelComponent } from './components/hotel/hotel.component';
     ProvinceComponent,
     ProvinceSlideComponent,
     HotelSlideComponent,
-    HotelComponent
+    HotelComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
