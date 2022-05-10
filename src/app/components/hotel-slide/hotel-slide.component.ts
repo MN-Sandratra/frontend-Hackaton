@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ɵclearResolutionOfComponentResourcesQueue } from '@angular/core';
+import { HotelsService } from 'src/app/services/hotels.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-hotel-slide',
@@ -51,9 +53,31 @@ export class HotelSlideComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  hotels:any[]=[];
+
+  constructor(private hotelService : HotelsService) { }
 
   ngOnInit(): void {
+    this.hotelService.getHotels().subscribe((results) => {
+      results.map((result) => {
+        // let imgUrl = "assets/img/ankasy.jpg";
+        // if (result["Image"].length > 0) {
+        // }
+        let imgUrl = environment.baseUrl + result["Image"][0]["label"]
+        console.log(result["Image"][0]["label"])
+        let newHotel = {
+          "nom" : result["designation"],
+          "adresse" : "Antananarivo",
+          "description" : result["description"],
+          "img" : imgUrl,
+          "wifi" : result["Wiffi"],
+          "parking" : result["Parking"],
+          "avis" : "Avis",
+          "link" : result["url"]
+        }
+        this.hotels.push(newHotel);
+      });
+    })
   }
 
 }

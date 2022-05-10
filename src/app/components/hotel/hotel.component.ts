@@ -14,6 +14,7 @@ export class HotelComponent implements OnInit {
   @Input() parking! : boolean;
   @Input() wifi! : boolean;
   @Input() avis! : number;
+  @Input() link! : string;
   shortedDescription : string = "";
   avisIterator! : Array<any>;
   faStar = faStar;

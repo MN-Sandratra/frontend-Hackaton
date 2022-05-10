@@ -12,37 +12,37 @@ export class ProvinceSlideComponent implements OnInit {
     {
     "_id": 1,
     "libellé": "ANTANANARIVO",
-    "img": "assets/img/provinces/antananarivo.png",
+    "img": "assets/img/provinces/antananarivo.jpg",
     "description": "La Province d'Antananarivo était l'une des six provinces de Madagascar, centrée autour de la capitale, Antananarivo qui est aussi la capitale du pays. Elle a une superficie de 58 283 km2 et une population de 5 932 607 personnes."
   },
   {
     "_id": 2,
     "libellé": "FIANARANTSOA",
-    "img": "assets/img/provinces/fianarantsoa.png",
+    "img": "assets/img/provinces/fianarantsoa.jpg",
     "description": "Fianarantsoa était l'une des six provinces de Madagascar avec une superficie de 103 272 km2. En 2011, elle avait une population de 4 142 444 habitants. Sa capitale est Fianarantsoa."
   },
   {
     "_id": 3,
     "libellé": "TOAMASINA",
-    "img": "assets/img/provinces/toamasina.png",
+    "img": "assets/img/provinces/antsiranana.jpg",
     "description": "La province de Tamatave était l'une des six provinces de Madagascar avec une superficie de 71 911 km2. En 2011, elle avait une population de 3 438 275 habitants. Son chef-lieu éponyme Tamatave, en malgache : Toamasina."
   },
   {
     "_id": 4,
     "libellé": "MAHAJANGA",
-    "img": "assets/img/provinces/mahajanga.png",
+    "img": "assets/img/provinces/fianarantsoa.jpg",
     "description": "La province de Mahajanga ou province de Majunga était l'une des six provinces de Madagascar, avec une superficie de 150 023 km2. En 2011, elle avait une population de 2 224 570 habitants. Sa capitale est Mahajanga (ou Majunga)."
   },
   {
     "_id": 5,
     "libellé": "TOLIARY",
-    "img": "assets/img/provinces/toliary.png",
+    "img": "assets/img/provinces/antsiranana.jpg",
     "description": "La province de Toliara - ou province de Tuléar (ou de Tolozy dans la langue courante locale) était l'une des six anciennes provinces de Madagascar, la plus vaste avec une superficie de 161 405 km². Elle a une population de 2 229 550 habitants (juillet 2001). Sa capitale est Toliara 1. La dénomination de « province » est appelée à disparaître au moins sur le plan politique et administratif, à la suite de la dernière réforme constitutionnelle d'avril 2007 qui consacre les régions."
   },
   {
     "_id": 6,
     "libellé": "ANTSIRANANA",
-    "img": "assets/img/provinces/antsiranana.png",
+    "img": "assets/img/provinces/antananarivo.jpg",
     "description": "Antsiranana, ou Diego Suarez, était l'une des six provinces de Madagascar. Elle a une superficie de 43 406 km2 et une population de 1 465 606 habitants (2011). Sa capitale est Antsiranana."
     }
   ]
